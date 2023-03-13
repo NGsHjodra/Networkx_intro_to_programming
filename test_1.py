@@ -20,4 +20,5 @@ def test_spannig_tree():
     T = nx.minimum_spanning_tree(G)
 
     # assert T.edges() == [(1, 2), (1, 4), (3, 6), (4, 5)]
-    assert True == True
+    # is tree
+    assert nx.is_tree(T) == True
